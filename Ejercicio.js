@@ -102,6 +102,105 @@ let result = quoteSample.match(myRegex); // Cambia esta línea //Respuesta
 console.log(result)
 */
 
+//todo: Ejercicio del dia 14: 5/1/2023
+
 //?11-Haz coincidir caracteres individuales no especificados
 
+/*
+let quoteSample = "3 blind mice.";
+let myRegex = /[^aeiou0-9]/gi; // Cambia esta línea //Respuesta
+let result = quoteSample.match(myRegex); // Cambia esta línea //Respuesta
+
+console.log(result);
+*/
+
+//?12-Haz coincidir caracteres que aparecen una o más veces
+
+/*
+let difficultSpelling = "Mississippi";
+let myRegex = /s+/g; // Cambia esta línea //respuesta
+let result = difficultSpelling.match(myRegex);
+
+console.log(result);
+*/
+
+//?13-Haz coincidir caracteres que aparecen cero o más veces
+
+
+//let chewieQuote = "Aaaaaaaaaaaaaaaarrrgh!";
+//let chewieRegex = /Aa*/; // Change this line //Respuesta
+/*let result = chewieQuote.match(chewieRegex);
+
+console.log(result);
+*/
+
+//?14-Encuentra caracteres con una coincidencia perezosa
+
+/*
+let text = "<h1>Winter is coming</h1>";
+let myRegex = /<.*?>/; // Cambia esta línea //respuesta
+let result = text.match(myRegex);
+
+console.log(result);	
+*/
+
+//?15-Encuentra uno o más criminales en una cacería
+
+/*
+let reCriminals = /C+/; // Cambia esta línea //respuesta
+
+console.log(reCriminals);
+*/
+
+//?16-Haz coincidir patrones de cadena de inicio
+
+/*
+let rickyAndCal = "Cal and Ricky both like racing.";
+let calRegex = /^Cal/; // Cambia esta línea //Respuesta
+let result = calRegex.test(rickyAndCal);
+
+console.log(result);
+*/
+
+//?17-Haz coincidir patrones de cadena final
+
+/*
+let caboose = "The last car on a train is the caboose";
+let lastRegex = /caboose$/; // Cambia esta línea
+let result = lastRegex.test(caboose);
+
+console.log(result);
+*/
+
+//?18-Coincide todas las letras y números
+
+/*
+let quoteSample = "The five boxing wizards jump quickly.";
+let alphabetRegexV2 = /\w/g; // Cambia esta línea
+let result = quoteSample.match(alphabetRegexV2).length;
+
+console.log(result);
+*/
+
+//?19-Haz coincidir todo menos letras y números
+
+/*
+let quoteSample = "The five boxing wizards jump quickly.";
+let nonAlphabetRegex = /\W/g; // Cambia esta línea
+let result = quoteSample.match(nonAlphabetRegex).length;
+
+console.log(result);
+*/
+
+//?20-Coincide con todos los números
+
+/*
+let movieName = "2001: A Space Odyssey";
+let numRegex = /\d/g; // Cambia esta línea
+let result = movieName.match(numRegex).length;
+
+console.log(result);
+*/
+
+//?21-Coincide con todos los caracteres no numéricos
 
