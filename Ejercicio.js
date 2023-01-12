@@ -202,5 +202,118 @@ let result = movieName.match(numRegex).length;
 console.log(result);
 */
 
+//todo: Ejercicio del dia 15/1/2023
+
 //?21-Coincide con todos los caracteres no numéricos
+
+/*
+let movieName = "2001: A Space Odyssey";
+let noNumRegex = /\D/g; // Cambia esta línea //Respuesta
+let result = movieName.match(noNumRegex).length;
+
+console.log(result);
+*/
+
+//?22-Restringe posibles nombres de usuario
+/*
+let username = "JackOfAllTrades";
+let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i; //Respuesta
+let result = userCheck.test(username);
+console.log(result)
+*/
+
+
+//Explicacion de la respuesta
+
+/*
+^ - start of input
+[a-z] - first character is a letter
+[a-z]+ - following characters are letters
+\d*$ - input ends with 0 or more digits
+| - or
+^[a-z] - first character is a letter
+\d\d+ - following characters are 2 or more digits
+$ - end of input
+*/
+
+//?23-Match Whitespace
+
+/*
+let sample = "Whitespace is important in separating words";
+let countWhiteSpace = /\s/g; // Change this line //answer
+let result = sample.match(countWhiteSpace);
+
+console.log(result);
+*/
+
+//?24-Match Non-Whitespace Characters
+
+/*
+let sample = "Whitespace is important in separating words";
+let countNonWhiteSpace = /\S/g; // Change this line //answer
+let result = sample.match(countNonWhiteSpace);
+
+console.log(result.length);
+*/
+
+//?25-Specify Upper and Lower Number of Matches
+
+/*
+let ohStr = "Ohhh no";
+let ohRegex = /Oh{3,6}\sno/; // Change this line //answer
+let result = ohRegex.test(ohStr);
+
+console.log(result);
+*/
+
+//?26-Specify Only the Lower Number of Matches
+
+/*
+let haStr = "Hazzzzah";
+let haRegex = /Haz{4,}ah/; // Change this line //answer
+let result = haRegex.test(haStr);
+
+console.log(result);
+*/
+
+//?27-Specify Exact Number of Matches
+
+/*
+let timStr = "Timmmmber";
+let timRegex = /Tim{4}ber/; // Change this line //answer
+let result = timRegex.test(timStr);
+
+console.log(result);
+*/
+
+//?28-Check for All or None
+
+/*
+let favWord = "favorite";
+let favRegex = /favou?rite/; // Change this line //answer
+let result = favRegex.test(favWord);
+
+console.log(result);
+*/
+
+//?29-Positive and Negative Lookahead
+
+/*
+let sampleWord = "astronaut";
+let pwRegex = /(?=\w{6})(?=\w*\d{2})/; // Change this line //answer
+let result = pwRegex.test(sampleWord);
+console.log(result);
+*/
+//?30-Check For Mixed Grouping of Characters
+
+/*
+let myString = "Eleanor Roosevelt";
+let myRegex = /(Franklin|Eleanor) (([A-Z]\.?|[A-Z][a-z]+) )?Roosevelt/; // Change this line // answer 
+let result = myRegex.test(myString); // Change this line // answer
+// After passing the challenge experiment with myString and see how the grouping works
+console.log(result);
+*/
+
+
+//?31-Reuse Patterns Using Capture Groups
 
