@@ -314,6 +314,35 @@ let result = myRegex.test(myString); // Change this line // answer
 console.log(result);
 */
 
+//todo: Ejercicio del dia 16: 13/1/2022
 
 //?31-Reuse Patterns Using Capture Groups
 
+/*
+let repeatNum = "42 42 42";
+let reRegex = /^(\d+) \1 \1(?!.)/; // Change this line // answer
+let result = reRegex.test(repeatNum);
+
+console.log(result);
+*/
+
+//?32-Use Capture Groups to Search and Replace
+
+/*
+let str = "one two three";
+let fixRegex = /(\w+)\s(\w+)\s(\w+)/; // Change this line //answer
+let replaceText = "$3 $2 $1"; // Change this line //answer
+let result = str.replace(fixRegex, replaceText);
+
+console.log(result);
+*/
+
+//?33-Remove Whitespace from Start and End
+
+/*
+let hello = "   Hello, World!  ";
+let wsRegex = /^\s+|\s+$/g; // Change this line
+let result = hello.replace(wsRegex, ""); // Change this line
+
+console.log(result);
+*/
